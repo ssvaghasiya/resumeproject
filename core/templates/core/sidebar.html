@@ -8,9 +8,16 @@
     </div>
     <hr class="border-light">
     <nav class="nav flex-column text-center">
-        <a href="" class="nav-link">Home</a>
-        <a href="" class="nav-link">Service</a>
-        <a href="" class="nav-link">Skill</a>
-        <a href="" class="nav-link">Contact</a>
+        <!-- <a href="/" class="nav-link">Home</a>
+        <a href="/serv/services/" class="nav-link">Service</a>
+        <a href="/edu/skill/" class="nav-link">Skill</a>
+        <a href="/contact/" class="nav-link">Contact</a> -->
+
+        <!-- or -->
+
+        <a href="{% url 'home'%}" class="nav-link {{home}}">Home</a>
+        <a href="{% url 'services'%}" class="nav-link {{services}}">Service</a>
+        <a href="{% url 'skill'%}" class="nav-link {{skill}}">Skill</a>
+        <a href="{% url 'contact'%}" class="nav-link {{contact}}">Contact</a>
     </nav>
 </div>
